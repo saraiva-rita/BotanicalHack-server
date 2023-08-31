@@ -1,25 +1,33 @@
 // We reuse this import in order to have access to the `body` property in requests
-const express = require("express");
+const express = require('express');
 
 // ℹ️ Responsible for the messages you see in the terminal as requests are coming in
 // https://www.npmjs.com/package/morgan
-const logger = require("morgan");
+const logger = require('morgan');
 
 // ℹ️ Needed when we deal with cookies (we will when dealing with authentication)
 // https://www.npmjs.com/package/cookie-parser
-const cookieParser = require("cookie-parser");
+const cookieParser = require('cookie-parser');
 
 // ℹ️ Needed to accept requests from 'the outside'. CORS stands for cross origin resource sharing
 // unless the request is made from the same domain, by default express wont accept POST requests
-const cors = require("cors");
+const cors = require('cors');
 
-const FRONTEND_URL = process.env.ORIGIN || "http://localhost:3000";
+const FRONTEND_URL = 'http://localhost:5173';
+
+// ℹ️ MongoStore in order to save the user session in the database
+// https://www.npmjs.com/package/connect-mongo
+const MongoStore = require('connect-mongo');
+
+// Connects the mongo uri to maintain the same naming structure
+const MONGO_URI =
+  'mongodb+srv://ritasaraiva:mrTW4Dz5cYpvcht2@cluster0.pwhb7jd.mongodb.net/?retryWrites=true&w=majority';
 
 // Middleware configuration
 module.exports = (app) => {
   // Because this will be hosted on a server that will accept requests from outside and it will be hosted ona server with a `proxy`, express needs to know that it should trust that setting.
   // Services like Fly use something called a proxy and you need to add this to your server
-  app.set("trust proxy", 1);
+  app.set('trust proxy', 1);
 
   // controls a very specific header to pass headers from the frontend
   app.use(
@@ -29,7 +37,7 @@ module.exports = (app) => {
   );
 
   // In development environment the app logs
-  app.use(logger("dev"));
+  app.use(logger('dev'));
 
   // To have access to `body` property in the request
   app.use(express.json());
