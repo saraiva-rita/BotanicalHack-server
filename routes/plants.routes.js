@@ -1,13 +1,13 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const { isAuthenticated } = require("../middleware/jwt.middleware");
+const { isAuthenticated } = require('../middleware/jwt.middleware');
 // Requiring Models
-const Plants = require("../models/Plants.model");
-const Review = require("../models/Review.model");
-const User = require("../models/User.model");
+const Plants = require('../models/Plants.model');
+const Review = require('../models/Review.model');
+const User = require('../models/User.model');
 
 // GET ROUTE to display all Plants in the Database
-router.get("/plants", async (req, res) => {
+router.get('/plants', async (req, res) => {
   try {
     // Get all Plants from our Database via .find() method
     let plantsFromDB = await Plants.find();
@@ -18,14 +18,14 @@ router.get("/plants", async (req, res) => {
 });
 
 // GET Route to display info about a specific Plant
-router.get("/plants/:plantId", isAuthenticated, async (req, res) => {
+router.get('/plants/:plantId', isAuthenticated, async (req, res) => {
   try {
     const { plantId } = req.params;
     let isMyPlant;
     let isWish;
 
     const currentUser = req.payload;
-    console.log("current user", currentUser);
+    /* console.log('current user', currentUser); */
     const thisUser = await User.findById(currentUser._id);
     if (thisUser.myPlants.includes(`${plantId}`)) {
       isMyPlant = true;
@@ -39,10 +39,10 @@ router.get("/plants/:plantId", isAuthenticated, async (req, res) => {
 
     // populate the plants with reviews and reviews with authors
     await foundPlant.populate({
-      path: "reviews",
+      path: 'reviews',
       populate: {
-        path: "author",
-        model: "User",
+        path: 'author',
+        model: 'User',
       },
     });
     res.json(foundPlant, isMyPlant, isWish);
@@ -53,11 +53,13 @@ router.get("/plants/:plantId", isAuthenticated, async (req, res) => {
 
 // ADD Plants to MyPlants
 router.post(
-  "/plants/:plantId/addMyPlants",
+  '/plants/:plantId/addMyPlants',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
     const currentUser = req.payload;
+
+    console.log('current user:', currentUser);
     try {
       const user = await User.findById(currentUser._id);
       const myPlant = await User.findByIdAndUpdate(currentUser._id, {
@@ -72,7 +74,7 @@ router.post(
 
 // Remove MyPlants from plant details
 router.delete(
-  "/plants/:plantId/removeMyPlants",
+  '/plants/:plantId/removeMyPlants',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
@@ -91,7 +93,7 @@ router.delete(
 
 // Remove myPlants from My Plants Page
 router.post(
-  "/myPlants/removeMyPlants/:plantId",
+  '/myPlants/removeMyPlants/:plantId',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
@@ -111,7 +113,7 @@ router.post(
 
 // ADD Plants to WishList
 router.post(
-  "/plants/addToWishList/:plantId",
+  '/plants/addToWishList/:plantId',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
@@ -130,7 +132,7 @@ router.post(
 
 // Remove WishedPlant from plant details
 router.delete(
-  "/plants/:plantId/removeFromWishList",
+  '/plants/:plantId/removeFromWishList',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
@@ -149,7 +151,7 @@ router.delete(
 
 // Remove WishedPlant from Wish List page
 router.post(
-  "/wishList/removeMyPlants/:plantId",
+  '/wishList/removeMyPlants/:plantId',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
@@ -169,7 +171,7 @@ router.post(
 
 // ADD REVIEWS
 router.post(
-  "/plants/:plantId/createReview",
+  '/plants/:plantId/createReview',
   isAuthenticated,
   async (req, res) => {
     try {
@@ -195,7 +197,7 @@ router.post(
 
       // add rating to reviews
       const plantUpdated = await Plants.findById(plantId);
-      await plantUpdated.populate("reviews");
+      await plantUpdated.populate('reviews');
 
       // calculate and update the average rating of all reviews
       const plantAverageRating = (
@@ -214,37 +216,9 @@ router.post(
   }
 );
 
-// EDIT REVIEWS
-
-router.put("/plants/:plantId/:reviewId/editReview", isAuthenticated, async(req, res) => {
-  
-  const {plantId, reviewId} = req.params;
-  const {content, rating} = req.body;
-  try{
-    await Review.findByIdAndUpdate(reviewId, {content, rating})
-    let foundPlant = await Plants.findById(plantId)
-
-    await foundPlant.populate('reviews')
-
-    const plantAverageRating = (
-      foundPlant.reviews.reduce(
-        (accumulator, currentValue) => accumulator + currentValue.rating,
-        0
-      ) / foundPlant.reviews.length
-    ).toFixed(1);
-
-    await Plants.findByIdAndUpdate(plantId, { rating: plantAverageRating });
-
-    res.json(foundPlant)
-  }
-  catch {
-    (error) => res.json(error);
-  }
-})
-
 // DELETE REVIEWS
 router.delete(
-  "/plants/:plantId/:reviewId/deleteReview",
+  '/plants/:plantId/:reviewId/deleteReview',
   isAuthenticated,
   async (req, res) => {
     const { plantId, reviewId } = req.params;
@@ -264,7 +238,7 @@ router.delete(
 
       // update rating to reviews
       const plantUpdated = await Plants.findById(plantId);
-      await plantUpdated.populate('reviews')
+      await plantUpdated.populate('reviews');
 
       const plantAverageRating = (
         plantUpdated.reviews.reduce(
