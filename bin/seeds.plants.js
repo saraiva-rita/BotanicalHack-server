@@ -532,7 +532,7 @@ const allPlants = [
   {
     name: `Scindapsus pictus 'Argyraeus'`,
     description: `Scindapsus pictus 'Argyraeus' is a popular and visually appealing houseplant known for its striking foliage. It belongs to the Araceae family. This variety of Satin Pothos features heart-shaped leaves with a glossy texture and striking silver or silvery-white markings. The variegation on the leaves resembles satin or silk fabric, hence the common name. The vine-like stems of the plant trail gracefully, making it an excellent choice for hanging baskets or as a trailing houseplant.`,
-    image: '/images/scindapsus-pictus.png',
+    image: '/images/scindapsus-pictus.jpg',
     care: {
       light: `Scindapsus pictus 'Argyraeus' thrives in moderate to bright, indirect light. It can tolerate lower light conditions but may lose some of its variegation in low-light settings. Avoid exposing it to direct sunlight, as this can scorch the leaves.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when the soil feels dry, and ensure that excess water drains away. Satin Pothos prefers to remain slightly moist but not waterlogged. It is more forgiving of underwatering than overwatering.`,
@@ -625,7 +625,7 @@ const allPlants = [
   {
     name: `Monstera Adansonii 'Monkey Leaf'`,
     description: `Monstera adansonii 'Monkey Leaf' is a popular tropical houseplant known for its distinctive foliage. It belongs to the Araceae family. The leaves are typically small, about 1 to 3 inches long, and have unique, Swiss cheese-like holes (fenestrations) and irregular, wavy edges. The 'Monkey Leaf' variety is a compact version of the Monstera adansonii, making it suitable for smaller spaces.`,
-    image: '/images/monstera-variegate.png',
+    image: '/images/monstera-adansonii.jpg',
     care: {
       light: `'Monkey Leaf' thrives in bright, indirect light. It can tolerate some dappled sunlight, but avoid direct sunlight, as it can scorch the leaves. Inadequate light may result in slower growth and smaller leaves.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when the soil feels dry to the touch. Ensure that the pot has good drainage to prevent waterlogged roots. Adjust the frequency of watering based on the season; reduce watering in winter when the plant's growth slows.`,
@@ -698,7 +698,7 @@ const allPlants = [
   {
     name: `Monstera Deliciosa`,
     description: `Monstera deliciosa, also known as the "Swiss Cheese Plant" or "Split-Leaf Philodendron," is a popular and iconic tropical houseplant. It's recognized for its large, glossy, split leaves that develop unique holes and splits as it matures. The plant can grow both as a bushy, floor-standing plant or trained to climb with proper support.`,
-    image: '/images/ficus-elastica.png',
+    image: '/images/monstera-deliciosa.png',
     care: {
       light: `Monstera deliciosa thrives in bright, indirect light. It can tolerate some dappled sunlight, but it should be protected from direct sun exposure, which can scorch the leaves. Avoid low light conditions, as they can lead to leggy growth and smaller leaves.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top 1-2 inches of soil feel dry. Ensure that the pot has good drainage to prevent root rot. Reduce watering during the winter months when growth slows.`,
