@@ -52,6 +52,18 @@ router.get('/plants/:plantId', isAuthenticated, async (req, res) => {
 });
 
 // ADD Plants to MyPlants
+router.get('/myPlants', isAuthenticated, async (req, res) => {
+  const currentUser = req.payload;
+
+  try {
+    const user = await User.findById(currentUser._id);
+    await user.populate('myPlants');
+    res.json(user.myPlants);
+  } catch {
+    (error) => res.json(error);
+  }
+});
+
 router.post(
   '/plants/:plantId/addMyPlants',
   isAuthenticated,
@@ -65,7 +77,6 @@ router.post(
       const myPlant = await User.findByIdAndUpdate(currentUser._id, {
         $push: { myPlants: plantId },
       });
-      res.json(myPlant);
     } catch {
       (error) => res.json(error);
     }
@@ -74,7 +85,7 @@ router.post(
 
 // Remove MyPlants from plant details
 router.delete(
-  '/plants/:plantId/removeMyPlants',
+  '/myPlants/:plantId/removeMyPlants',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
@@ -112,8 +123,20 @@ router.post(
 );
 
 // ADD Plants to WishList
+router.get('/wishList', isAuthenticated, async (req, res) => {
+  const currentUser = req.payload;
+
+  try {
+    const user = await User.findById(currentUser._id);
+    await user.populate('wishList');
+    res.json(user.wishList);
+  } catch {
+    (error) => res.json(error);
+  }
+});
+
 router.post(
-  '/plants/addToWishList/:plantId',
+  '/plants/:plantId/addToWishList',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
@@ -123,7 +146,6 @@ router.post(
       const myWish = await User.findByIdAndUpdate(currentUser._id, {
         $push: { wishList: plantId },
       });
-      res.json(myWish);
     } catch {
       (error) => res.json(error);
     }
@@ -132,7 +154,7 @@ router.post(
 
 // Remove WishedPlant from plant details
 router.delete(
-  '/plants/:plantId/removeFromWishList',
+  '/wishList/:plantId/removeWishList',
   isAuthenticated,
   async (req, res) => {
     const { plantId } = req.params;
