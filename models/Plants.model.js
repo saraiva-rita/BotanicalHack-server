@@ -26,6 +26,7 @@ const plantSchema = new Schema(
       type: String,
       required: true,
     },
+    category: String,
     rating: Number,
     reviews: [
       {
