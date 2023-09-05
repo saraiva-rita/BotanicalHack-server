@@ -1,58 +1,58 @@
 // Require Mongoose
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 // Require Plants Model
-const Plants = require("../models/Plants.model.js");
+const Plants = require('../models/Plants.model.js');
 
 const MONGO_URI =
-  "mongodb+srv://ritasaraiva:mrTW4Dz5cYpvcht2@cluster0.pwhb7jd.mongodb.net/?retryWrites=true&w=majority";
+  'mongodb+srv://ritasaraiva:mrTW4Dz5cYpvcht2@cluster0.pwhb7jd.mongodb.net/?retryWrites=true&w=majority';
 
 const allPlants = [
   {
-    name: "Calathea Orbifolia",
+    name: 'Calathea Orbifolia',
     description: `This South American Amazon beauty has broad leaves that are green and silver striped. The Calathea Orbifolia is a living plant. She will assume different positions during the day; in the morning her leaves will open and in the evening they will close again.`,
-    image: "/images/calathea-orbifolia.jpg",
+    image: '/images/calathea-orbifolia.jpg',
     care: {
       light:
         "Avoid direct sunlight, as it can scorch the leaves. It's best suited for areas with filtered or dappled sunlight. ",
       watering:
-        "Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. /n ",
-      soil: "Plant Calathea orbifolia in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots. /n ",
+        'Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. /n ',
+      soil: 'Plant Calathea orbifolia in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots. /n ',
       seasonalCare:
         "Humidity: Maintain higher humidity levels around the plant, especially during the dry winter months. Use a humidifier or place the pot on a humidity tray. /n Pruning: Remove any brown or damaged leaves to encourage healthy growth and maintain the plant's appearance. /n Cleaning: Wipe the leaves regularly with a damp cloth to remove dust and keep the foliage looking vibrant. /n WinterCare: Reduce watering and avoid fertilizing during the winter when the plant is in a semi-dormant state. /n ",
       fertilizing:
-        "Feed every 4-6 weeks during spring and summer with a balanced, water-soluble fertilizer diluted to half strength",
+        'Feed every 4-6 weeks during spring and summer with a balanced, water-soluble fertilizer diluted to half strength',
     },
     tips: `Temperature Sensitivity: Protect the plant from temperature fluctuations and drafts, which can cause stress and leaf damage.
     Grouping: Grouping it with other plants can help create a microclimate with higher humidity levels.
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
-    name: "Calathea Medallion",
+    name: 'Calathea Medallion',
     description:
-      "Is a captivating tropical houseplant known for its ornate foliage. The leaves are round, broad, and feature intricate patterns of green, dark green, and various shades of pink or burgundy. The markings on the leaves resemble medallions, which is how it gets its common name.",
-    image: "/images/calathea-medallion.png",
+      'Is a captivating tropical houseplant known for its ornate foliage. The leaves are round, broad, and feature intricate patterns of green, dark green, and various shades of pink or burgundy. The markings on the leaves resemble medallions, which is how it gets its common name.',
+    image: '/images/calathea-medallion.png',
     care: {
       light:
         "Avoid direct sunlight, as it can scorch the leaves and cause them to lose their vibrant coloration. It's best suited for areas with filtered or dappled sunlight. Low light conditions may lead to reduced growth and less vibrant foliage /n ",
       watering:
-        "Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. Consider using a humidity tray or misting the leaves regularly./n ",
-      soil: "Plant it in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots. /n ",
+        'Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. Consider using a humidity tray or misting the leaves regularly./n ',
+      soil: 'Plant it in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots. /n ',
       seasonalCare:
         "Humidity: Maintain higher humidity levels around the plant, especially during the dry winter months. Use a humidifier or place the pot on a humidity tray. /n Pruning: Remove any brown or damaged leaves to encourage healthy growth and maintain the plant's appearance. /n Cleaning: Wipe the leaves regularly with a damp cloth to remove dust and keep the foliage looking vibrant. /n Winter Care: Reduce watering and avoid fertilizing during the winter when the plant is in a semi-dormant state. /n ",
       fertilizing:
-        "Feed every 4-6 weeks during spring and summer with a balanced, water-soluble fertilizer diluted to half strength. Avoid fertilizing during the winter months.",
+        'Feed every 4-6 weeks during spring and summer with a balanced, water-soluble fertilizer diluted to half strength. Avoid fertilizing during the winter months.',
     },
-    tips: "Temperature Sensitivity: Protect the plant from temperature fluctuations and drafts, which can cause stress and leaf damage. /n Grouping: Grouping it with other plants can help create a microclimate with higher humidity levels. /n Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.  /n Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations. /n Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed. /n ",
-    category: "Pet Friendly",
+    tips: 'Temperature Sensitivity: Protect the plant from temperature fluctuations and drafts, which can cause stress and leaf damage. /n Grouping: Grouping it with other plants can help create a microclimate with higher humidity levels. /n Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.  /n Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations. /n Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed. /n ',
+    category: 'Pet Friendly',
   },
   {
-    name: "Calathea Makoyana",
+    name: 'Calathea Makoyana',
     description: `Commonly known as the "Peacock Plant" is a stunning tropical houseplant appreciated for its intricately patterned foliage. Its leaves feature a beautiful combination of green, cream, and purple hues, with a pattern that resembles peacock feathers, giving it its common name.`,
-    image: "/images/calathea-makoyana.png",
+    image: '/images/calathea-makoyana.png',
     care: {
       light: `Avoid direct sunlight, as it can scorch the leaves. This plant is particularly well-suited for areas with filtered or dappled sunlight.`,
       watering: `Keep the soil consistently moist but not soggy. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. Maintain higher humidity levels around the plant to mimic its tropical habitat.`,
@@ -68,12 +68,12 @@ const allPlants = [
     Rotate: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
-    name: "Calathea Triostar",
+    name: 'Calathea Triostar',
     description: `Also known as the "Triostar Stromanthe", is a captivating tropical houseplant cherished for its striking foliage. Its leaves are lance-shaped with vibrant shades of pink, cream, and green, creating a stunning tricolor effect. The undersides of the leaves are typically a deep maroon or burgundy color.`,
-    image: "/images/calathea-triostar.jpg",
+    image: '/images/calathea-triostar.jpg',
     care: {
       light: `It can tolerate some filtered sunlight but should be protected from direct sun exposure, which can scorch its leaves. This plant is best suited for areas with ample natural light but not harsh, direct sunlight.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Ensure that the pot has good drainage to prevent root rot. Maintaining higher humidity levels is essential for this plant's health, so consider misting the leaves regularly.`,
@@ -89,12 +89,12 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
-    name: "Calathea Zebrina",
+    name: 'Calathea Zebrina',
     description: `Often referred to as the "Zebra Plant" is a distinctive and visually striking houseplant known for its bold, zebra-like patterns on its leaves. The leaves are elongated and have a deep green color with contrasting light green stripes or markings. The undersides of the leaves are often maroon, adding to its overall appeal. This plant belongs to the Marantaceae family, which includes various species with captivating foliage.`,
-    image: "/images/calathea-zebrina.png",
+    image: '/images/calathea-zebrina.png',
     care: {
       light: `It thrives in filtered sunlight or moderate shade. Avoid exposing it to direct sunlight, as this can scorch the leaves. Inadequate light can lead to less vibrant leaf patterns and slower growth.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Use room-temperature water and ensure proper drainage to prevent root rot. Maintaining higher humidity levels around the plant, misting the leaves.`,
@@ -109,12 +109,12 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
-    category: "Calathea",
+    category: 'Calathea',
   },
   {
-    name: "Calathea Sanderiana",
+    name: 'Calathea Sanderiana',
     description: `Is a striking and elegant houseplant known for its eye-catching foliage. It belongs to the Marantaceae family and features lance-shaped leaves with a beautiful combination of dark green and silver-green stripes. The undersides of the leaves are often maroon, adding to its aesthetic appeal. When in low light or at night, the leaves fold upward, revealing the maroon undersides, and then unfurl again during the day.`,
-    image: "/images/calathea-sanderiana.png",
+    image: '/images/calathea-sanderiana.png',
     care: {
       light: `It prefers filtered sunlight or moderate shade. Avoid exposing it to direct sunlight, as this can scorch the leaves. Inadequate light can result in faded leaf colors and slower growth.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Use room-temperature water and ensure that the pot has proper drainage to prevent root rot. Appreciates higher humidity levels, so consider misting the leaves.`,
@@ -129,12 +129,12 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
-    category: "Calathea",
+    category: 'Calathea',
   },
   {
-    name: "Calathea Rufibarba",
+    name: 'Calathea Rufibarba',
     description: `Commonly known as the "Velvet Calathea" is a striking tropical houseplant recognized for its unique and attractive features. It has elongated, lance-shaped leaves with a rich, velvety texture on the upper side and a deep purple hue on the underside. The plant's fuzzy appearance and rich coloration make it a popular choice among indoor plant enthusiasts.`,
-    image: "/images/calathea-rufibarba.png",
+    image: '/images/calathea-rufibarba.png',
     care: {
       light: `It prefers filtered or dappled sunlight. Protect it from direct sunlight, as intense sun can scorch the leaves. Inadequate light can result in less vibrant foliage and slower growth.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Ensure that the pot has good drainage to prevent root rot. Maintaining higher humidity levels around the plant is important for its overall health.`,
@@ -150,12 +150,12 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
-    category: "Calathea",
+    category: 'Calathea',
   },
   {
-    name: "Calathea White Fusion",
+    name: 'Calathea White Fusion',
     description: `Is a striking and highly sought-after tropical houseplant known for its exquisite foliage. It features broad, lance-shaped leaves with a mesmerizing combination of green, cream, and various shades of pink or purple. The unique variegation on its leaves resembles brush strokes, giving it an artistic and captivating appearance.`,
-    image: "/images/calathea-white-fusion.png",
+    image: '/images/calathea-white-fusion.png',
     care: {
       light: `It appreciates ample natural light but should be protected from direct sunlight, which can harm the delicate leaves. Inadequate light can lead to less vibrant variegation.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Ensure that the pot has good drainage to prevent root rot. Maintaining higher humidity levels is crucial for this plant's health, so consider using a humidity tray, misting the leaves regularly, or using a room humidifier.`,
@@ -172,12 +172,12 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
-    category: "Calathea",
+    category: 'Calathea',
   },
   {
-    name: "Calathea Oppenheimiana",
+    name: 'Calathea Oppenheimiana',
     description: `Is a striking and ornamental houseplant known for its lush foliage. It belongs to the Marantaceae family. The plant features large, oval-shaped leaves with prominent dark green veins on a lighter green background. The undersides of the leaves are often reddish-purple, adding to its visual appeal. Is renowned for its unique and intricate leaf patterns, making it a popular choice among plant enthusiasts.`,
-    image: "/images/calathea-oppenheimiana.png",
+    image: '/images/calathea-oppenheimiana.png',
     care: {
       light: `It thrives in well-lit areas with filtered sunlight. Avoid exposing it to direct sun, as this can scorch the leaves. Inadequate light may result in less vibrant foliage and slower growth.`,
       watering: `Keep the soil consistently moist but not soggy. Water the plant when the top inch or so of the soil feels slightly dry. Use room-temperature water to avoid shocking the plant. Ensure that the pot has proper drainage to prevent waterlogged roots.`,
@@ -190,12 +190,12 @@ const allPlants = [
     Keep Away from Drafts: Protect the plant from drafts and sudden temperature changes, as this can cause stress and leaf damage.
     Prayer Plant Behavior: is sometimes referred to as a "prayer plant" due to its habit of folding its leaves upward at night. This is a natural behavior and not a cause for concern.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.`,
-    category: "Calathea",
+    category: 'Calathea',
   },
   {
-    name: "Calathea Insigne",
+    name: 'Calathea Insigne',
     description: `Also known as the "Rattlesnake Plant," is a stunning and popular tropical houseplant admired for its striking foliage. It features lance-shaped leaves with a dark green background adorned with beautiful, wavy, and light green patterns that resemble the skin of a rattlesnake. The contrasting colors and intricate markings make it a visually appealing addition to indoor spaces.`,
-    image: "/images/calathea-insigne.png",
+    image: '/images/calathea-insigne.png',
     care: {
       light: `It thrives in filtered sunlight or moderate shade. Avoid direct sunlight, as it can scorch the leaves. Inadequate light can result in faded leaf patterns and slower growth.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Use room-temperature water and avoid allowing the plant to sit in standing water, which can lead to root rot. Maintaining higher humidity levels is crucial for this plant's health, so consider misting the leaves regularly.`,
@@ -212,12 +212,12 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
-    category: "Calathea",
+    category: 'Calathea',
   },
   {
-    name: "Aspidistra Elatior",
+    name: 'Aspidistra Elatior',
     description: `Aspidistra elatior, commonly known as the Cast Iron Plant, is a hardy and low-maintenance indoor plant. It's characterized by its dark green, leathery leaves that grow upright from a central base. This plant is often used as a decorative element in homes and offices due to its ability to tolerate low-light conditions.`,
-    image: "/images/aspidistra-elatior.png",
+    image: '/images/aspidistra-elatior.png',
     care: {
       light: `Aspidistra elatior is exceptionally tolerant of low light conditions. It can thrive in dimly lit rooms or areas with filtered, indirect light. It's an excellent choice for rooms with little natural sunlight.`,
       watering: `Keep the soil evenly moist but not waterlogged. Water thoroughly when the top inch of soil feels dry. During the winter months when growth slows, reduce watering frequency. It's important not to let the plant sit in standing water, as it can lead to root rot.`,
@@ -234,12 +234,12 @@ const allPlants = [
     Pest Resistance: It's generally resistant to pests, making it a low-maintenance choice.
     Sturdy Container: Ensure that the pot or container has good drainage to prevent waterlogged soil.
     Patience: Aspidistra elatior is a slow grower, so be patient and don't expect rapid growth or frequent propagation.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
     name: `Epipremnum Aureum - Manjula`,
     description: `Also known as "Manjula Pothos" is a popular and visually stunning cultivar of the common Pothos plant. It is characterized by its striking variegated foliage, featuring heart-shaped leaves with shades of green, creamy-white, and silver-gray. The variegation varies from leaf to leaf, creating a unique and eye-catching appearance.`,
-    image: "/images/manjula.png",
+    image: '/images/manjula.png',
     care: {
       light: `It can tolerate lower light conditions but may grow more slowly and display less vibrant variegation. Avoid direct sunlight, as it can scorch the leaves.`,
       watering: `Allow the top inch or so of the soil to dry out before watering. Water thoroughly when needed, and let excess water drain from the pot. Pothos are relatively forgiving if you occasionally forget to water, but they prefer consistently moist soil.`,
@@ -254,18 +254,18 @@ const allPlants = [
     Humidity: While they can adapt to lower humidity levels, Pothos appreciate moderate to high humidity. A humidity tray or regular misting can be beneficial.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound, typically every 2-3 years. Choose a slightly larger pot as needed.`,
-    category: "Purifying",
+    category: 'Purifying',
   },
   {
     name: `Dracaena Marginata 'Sunray'`,
     description: `Also known as the "Sunray Madagascar Dragon Tree," is a visually striking and popular indoor plant. It is a cultivar of the Dracaena marginata species. This plant is recognized for its slender, upright stems with clusters of arching, sword-shaped leaves. The leaves have a vibrant and distinctive coloration, featuring green centers with bright yellow to creamy margins, hence the name "Sunray."`,
-    image: "/images/dracaena-marginata.png",
+    image: '/images/dracaena-marginata.png',
     care: {
       light:
-        "It can tolerate some direct sunlight, but prolonged exposure to harsh sun can scorch the leaves. Inadequate light can lead to leggy growth and faded leaf color. This plant can also adapt to lower light conditions, although its growth may slow.",
+        'It can tolerate some direct sunlight, but prolonged exposure to harsh sun can scorch the leaves. Inadequate light can lead to leggy growth and faded leaf color. This plant can also adapt to lower light conditions, although its growth may slow.',
       watering:
-        "Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when needed, and ensure proper drainage to prevent waterlogged roots.",
-      soil: "Plant in well-draining potting mix. A mix formulated for houseplants or a combination of peat, perlite, and a small amount of sand works well. Good soil aeration is essential.",
+        'Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when needed, and ensure proper drainage to prevent waterlogged roots.',
+      soil: 'Plant in well-draining potting mix. A mix formulated for houseplants or a combination of peat, perlite, and a small amount of sand works well. Good soil aeration is essential.',
       seasonalCare: `Pruning: Prune to remove any dead or yellowing leaves and to shape the plant if necessary.
       Cleaning: Wipe the leaves occasionally with a damp cloth to remove dust and maintain their vibrant appearance.
       Winter Care: Reduce watering and avoid fertilizing during the winter when growth naturally slows.`,
@@ -276,12 +276,12 @@ const allPlants = [
     Humidity: While it can adapt to average indoor humidity levels, higher humidity levels can benefit the plant's overall health.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container. Typically, this is needed every 2-3 years.`,
-    category: "Purifying",
+    category: 'Purifying',
   },
   {
     name: `Epipremnum aureum - "Pothos"`,
     description: `Pothos is a popular and versatile houseplant known for its heart-shaped, glossy leaves that come in various shades of green. It belongs to the Araceae family. The plant typically features trailing vines that can grow quite long, making it an excellent choice for hanging baskets or allowing it to cascade from shelves or containers. Pothos is loved for its ease of care and air-purifying qualities.`,
-    image: "/images/epipremnum-aureum.jpg",
+    image: '/images/epipremnum-aureum.jpg',
     care: {
       light: `Pothos is adaptable to different light conditions but thrives in moderate, indirect light. It can tolerate lower light but may grow more slowly and have less variegation in such settings. Avoid exposing it to direct sunlight, as this can scorch the leaves.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when the soil feels dry to the touch, and ensure that excess water drains away, avoiding waterlogged.`,
@@ -295,12 +295,12 @@ const allPlants = [
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Indoor vs. Outdoor: Pothos is primarily an indoor plant but can be grown outdoors in mild climates.
     Pothos is a fantastic choice for both beginner and experienced plant enthusiasts due to its resilience and adaptability. With proper care, it will thrive indoors and enhance the beauty of your living space.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Alocasia Polly`,
     description: `Also known as African Mask Plant or Elephant Ear, is a striking tropical plant appreciated for its glossy, arrow-shaped leaves. The leaves are deep green with contrasting white to silvery veins, resembling the patterns on a mask, hence the common name "African Mask Plant."`,
-    image: "/images/alocasia-polly.png",
+    image: '/images/alocasia-polly.png',
     care: {
       light: `It can tolerate some direct morning sun, but intense sunlight should be avoided, as it can scorch the leaves.`,
       watering: `Keep the soil consistently moist but not soggy. Water when the top inch of soil feels dry, typically every 1-2 weeks. Reduce watering in the winter when growth slows.`,
@@ -313,12 +313,12 @@ const allPlants = [
     Pruning: Remove any damaged or yellowing leaves to encourage healthy growth.
     Pest Management: Keep an eye out for pests like spider mites and scale insects, which can sometimes infest Alocasia Polly. Treat promptly if you notice any issues.
     Toxicity: Be cautious if you have pets or small children, as Alocasia Polly is toxic if ingested.`,
-    category: "Foliage",
+    category: 'Foliage',
   },
   {
     name: `Begonia Maculata - Polka Dot`,
     description: `Commonly known as the Polka Dot Begonia, is an eye-catching houseplant. It is recognized for its unique foliage, which features large, asymmetrical, angel-wing-shaped leaves adorned with silvery-white spots and deep green coloration. This begonia can also produce clusters of delicate pink or white flowers, though it's primarily grown for its striking leaves.`,
-    image: "/images/begonia-maculata.png",
+    image: '/images/begonia-maculata.png',
     care: {
       light: `It should be shielded from direct sunlight, which can scorch its leaves. East or west-facing windows with filtered light are ideal.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure the pot has good drainage to prevent root rot. Reduce watering slightly during the winter months when growth slows.`,
@@ -332,12 +332,12 @@ const allPlants = [
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 2-3 years in the spring.
     Propagation: Can be propagated through stem cuttings. Take cuttings with a few leaves attached and root them in a well-draining medium.
     Support: As the plant grows, you may need to provide gentle support to keep its stems from becoming too leggy.`,
-    category: "Foliage",
+    category: 'Foliage',
   },
   {
     name: `Bonsai - Acer Palmatum 'Yellow'`,
     description: `Acer palmatum, commonly known as Japanese Maple, is a popular choice for bonsai enthusiasts. The 'Yellow' variety is prized for its striking golden-yellow foliage. Bonsai trees are miniature representations of full-sized trees and require careful pruning and training to maintain their shape and size.`,
-    image: "/images/????????.png",
+    image: '/images/????????.png',
     care: {
       light: `Acer palmatum 'Yellow' bonsai prefers partial shade to filtered sunlight. Protect it from intense midday sun, especially during the hottest summer months, as excessive sun can scorch the delicate leaves.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water thoroughly when the top inch of soil feels slightly dry. Ensure that the pot has good drainage to prevent root rot. The frequency of watering may vary with the seasons; monitor the soil's moisture level closely.`,
@@ -354,12 +354,12 @@ const allPlants = [
     Monitor for Pests: Keep an eye out for pests such as aphids, scale insects, and spider mites, and treat promptly if you notice any infestations.
     Rotate: To ensure even growth, rotate your bonsai periodically so that all sides receive equal light.
     Patience: Bonsai is an art that requires patience. It takes time to develop the desired shape and appearance, so be patient and enjoy the process.`,
-    category: "Bonsai",
+    category: 'Bonsai',
   },
   {
     name: `Bonsai - Japanese Maple (Acer palmatum)`,
     description: `Japanese Maple bonsai features delicate, palmate leaves that transform into brilliant hues of red and orange in the fall.`,
-    image: "/images/BonsaiAcerPalmatum.png",
+    image: '/images/BonsaiAcerPalmatum.png',
     care: {
       light: `Prefers Partial shade with dappled sunlight; avoid harsh afternoon sun.`,
       watering: ` Keep the soil consistently moist but not waterlogged.`,
@@ -368,7 +368,7 @@ const allPlants = [
       fertilizing: ` Fertilize lightly in spring and summer.`,
     },
     tips: `Prune to maintain the desired shape, watch for aphids and scale insects, repot every 2-3 years, propagate from seeds or cuttings, use stakes for support if necessary.`,
-    category: "Bonsai",
+    category: 'Bonsai',
   },
   {
     name: `Alocasia Zebrina`,
@@ -389,7 +389,7 @@ const allPlants = [
     Pot Size: Choose a pot that allows for some room for growth but doesn't overwhelm the plant. Repot as needed when the plant becomes root-bound.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Temperature Sensitivity: Protect the plant from temperature fluctuations and drafts.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Schismatoglottis Wallichii`,
@@ -410,12 +410,12 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
-    category: "Foliage",
+    category: 'Foliage',
   },
   {
     name: `Light Veins – Maranta`,
     description: `The Maranta Light Veins, also known as the Prayer Plant, is a popular and attractive houseplant known for its striking foliage. It features oval-shaped leaves with intricate patterns of dark green veins and light green backgrounds, resembling delicate artwork. The leaves fold up at night, resembling hands in prayer, which is the origin of its common name.`,
-    image: "/images/schismatoglottis-wallichii.png",
+    image: '/images/light-maranta.png',
     care: {
       light: `Maranta Light Veins thrives in bright, indirect light. Avoid exposing it to direct sunlight, as it can scorch the leaves. It can tolerate lower light conditions, but its colors and patterns will be less vibrant.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Ensure that the pot has good drainage to prevent root rot. During the growing season (spring and summer), you may need to water more frequently, while in the winter, when growth slows, reduce watering.`,
@@ -431,12 +431,12 @@ const allPlants = [
     Rotation: Rotate the plant occasionally to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Aglaonema - Crete Flame`,
     description: `Aglaonema 'Crete Flame' is a stunning and vibrant cultivar of the Aglaonema genus, commonly known as "Chinese Evergreen." This variety is admired for its striking foliage featuring dark green leaves adorned with bright pink and red hues. The leaves are typically lance-shaped and have a glossy texture, adding a pop of color and tropical elegance to indoor spaces.`,
-    image: "/images/aglaonema-crete-flame.png",
+    image: '/images/aglaonema-crete-flame.png',
     care: {
       light: `Aglaonema 'Crete Flame' prefers moderate to low light conditions. It can tolerate low light but will exhibit more vibrant foliage colors in bright, indirect light. Avoid exposing it to direct sunlight, as it can scorch the leaves.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when needed, and ensure that the pot has good drainage to prevent waterlogged roots. Be cautious not to overwater, as Aglaonemas are susceptible to root rot.`,
@@ -450,12 +450,12 @@ const allPlants = [
     Pruning: Prune to remove any yellowing or damaged leaves and to maintain the desired shape.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
-    category: "Purifying",
+    category: 'Purifying',
   },
   {
     name: `Phyllostachya Pink – Hypoestes`,
     description: `The Phyllostachya Pink – Hypoestes is a Polka Dot Plant which is a charming and popular houseplant valued for its brightly colored, spotted leaves. The 'Pink' variety, as the name suggests, features vibrant pink or reddish-pink spots on its foliage. The leaves are typically elliptical or ovate and have a soft, somewhat fuzzy texture. Polka Dot Plants are known for their attractive and eye-catching appearance, making them a delightful addition to indoor spaces.`,
-    image: "/images/aglaonema-crete-flame.png",
+    image: '/images/aglaonema-crete-flame.png',
     care: {
       light: `Polka Dot Plants prefer bright, indirect light. They thrive in filtered sunlight or moderate shade. While they can tolerate some direct morning sunlight, it's essential to avoid intense, direct sun, which can scorch the leaves. Inadequate light can result in leggy growth and less vibrant foliage.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Polka Dot Plants appreciate consistent moisture, and it's crucial to avoid both overwatering and underwatering. Use room-temperature water and ensure proper drainage.`,
@@ -470,12 +470,12 @@ const allPlants = [
     Pinching: Pinch or trim the plant occasionally to encourage compact growth and prevent it from becoming leggy.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and aphids, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 1-2 years. Choose a slightly larger pot as needed.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Tillandsia cyanea – White`,
     description: `Tillandsia cyanea, commonly known as the "Pink Quill Plant," is an attractive and exotic bromeliad species. The 'Branca' variety is known for its stunning pink or magenta bracts that resemble flowers, although they are actually modified leaves. The true flowers are small and inconspicuous, nestled within the colorful bracts. This plant features long, arching, strap-like leaves that are typically green or silver-green, adding to its unique appearance.`,
-    image: "/images/tillandsia-cyanea-white.png",
+    image: '/images/tillandsia-cyanea-white.png',
     care: {
       light: `Tillandsia cyanea 'Branca' prefers bright, indirect light. It thrives in filtered sunlight or moderate shade. Avoid exposing it to direct sunlight, as this can scorch the leaves. Adequate light is essential for vibrant bract color and healthy growth.`,
       watering: `Water the plant thoroughly by submerging it in a container of water for about 10-15 minutes every 1-2 weeks during the growing season (spring and summer). Ensure that it drains thoroughly before returning it to its display location. Reduce watering in the winter when growth slows, typically to once a month or as needed.`,
@@ -489,12 +489,12 @@ const allPlants = [
     tips: `Air Circulation: Ensure good air circulation around the plant to prevent fungal issues and promote overall health.
     Display: Place the Pink Quill Plant in a decorative container, hanging basket, or mounted on a suitable surface to show off its unique appearance.
     Water Quality: Use room-temperature, filtered, or rainwater for submerging or misting the plant. Tap water with high mineral content can leave deposits on the leaves over time.`,
-    category: "Suspended",
+    category: 'Suspended',
   },
   {
     name: `Syngonium Pixie`,
     description: `Syngonium pixie is a compact and charming houseplant known for its small, arrowhead-shaped leaves. The leaves typically feature a combination of green and creamy-white variegation, creating an attractive and delicate appearance. It's a popular choice for tabletops and small spaces due to its manageable size.`,
-    image: "/images/syngonium-pixie.png",
+    image: '/images/syngonium-pixie.png',
     care: {
       light: `Syngonium pixie thrives in bright, indirect light. It can tolerate some dappled sunlight, but avoid exposing it to direct sunlight, which can scorch the leaves. Lower light conditions are also acceptable but may result in slower growth and less vibrant variegation.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Ensure that the pot has good drainage to prevent overwatering. Reduce watering during the winter when the plant's growth slows.`,
@@ -510,12 +510,12 @@ const allPlants = [
     Propagation: Syngonium pixie can be easily propagated from stem cuttings placed in water or directly in soil.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container. Typically, this is needed every 2-3 years in the spring.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
     name: `Senecio rowleyanus 'Tear drops'`,
     description: `The String of Pearls is a unique and eye-catching succulent plant known for its cascading growth habit. It belongs to the Senecio genus and is characterized by its slender, trailing stems that are lined with small, spherical leaves resembling pearls. The leaves are typically green but can vary in color depending on light conditions. When grown in bright, indirect light, they often take on a lighter green hue.`,
-    image: "/images/tear-drops.png",
+    image: '/images/tear-drops.png',
     care: {
       light: `Senecio rowleyanus 'Tear Drops' thrives in bright, indirect light. It does well in partial shade or filtered sunlight. Avoid exposing it to direct sunlight, as this can scorch the delicate leaves. Inadequate light may lead to leggy growth.`,
       watering: `Allow the soil to dry out between waterings. Water sparingly but thoroughly when the top inch of soil feels dry. It's important not to overwater, as this plant is susceptible to rot. During the growing season (spring and summer), water more frequently, and reduce watering in the winter when growth slows.`,
@@ -529,12 +529,12 @@ const allPlants = [
     Support: Provide support or a trellis if the stems become too long and start to trail excessively.
     Propagation: You can propagate new plants from stem cuttings. Simply cut a healthy stem with pearls, let it callus for a day or two, and then plant it in well-draining soil.
     Pest Management: Check for common succulent pests like mealybugs and aphids, and treat them promptly if you notice any infestations.`,
-    category: "Suspended",
+    category: 'Suspended',
   },
   {
     name: `Sedum Burrito`,
     description: `Sedum burrito, commonly known as the "Burro's Tail" or "Donkey Tail," is a charming succulent plant appreciated for its trailing growth habit. It belongs to the Sedum genus and features long, trailing stems densely covered in small, rounded, bluish-green leaves. The leaves give the plant its distinctive appearance, resembling the tail of a donkey or burro. When grown in optimal conditions, this succulent may produce small, star-shaped pink or red flowers in late summer.`,
-    image: "/images/sedum-burrito.png",
+    image: '/images/sedum-burrito.png',
     care: {
       light: `Sedum burrito thrives in bright, indirect light. It prefers partial to full sunlight but should be protected from intense, direct sun, which can scorch the leaves. Adequate light is crucial for healthy growth and maintaining the plant's vibrant color.`,
       watering: `Allow the soil to dry out between waterings. Water sparingly but thoroughly when the top inch or two of soil feels dry to the touch. Overwatering can lead to root rot, so it's essential to err on the side of underwatering, especially during the dormant winter period. Water more frequently during the active growing season in spring and summer.`,
@@ -548,12 +548,12 @@ const allPlants = [
     Support: Provide support or a trellis if the stems become too long and start to trail excessively.
     Propagation: You can propagate new plants from stem cuttings. Simply cut a healthy stem segment, let it callus for a day or two, and then plant it in well-draining soil.
     Pest Management: Check for common succulent pests like mealybugs and aphids, and treat them promptly if you notice any infestations.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Scindapsus pictus 'Argyraeus'`,
     description: `Scindapsus pictus 'Argyraeus' is a popular and visually appealing houseplant known for its striking foliage. It belongs to the Araceae family. This variety of Satin Pothos features heart-shaped leaves with a glossy texture and striking silver or silvery-white markings. The variegation on the leaves resembles satin or silk fabric, hence the common name. The vine-like stems of the plant trail gracefully, making it an excellent choice for hanging baskets or as a trailing houseplant.`,
-    image: "/images/scindapsus-pictus.jpg",
+    image: '/images/scindapsus-pictus.jpg',
     care: {
       light: `Scindapsus pictus 'Argyraeus' thrives in moderate to bright, indirect light. It can tolerate lower light conditions but may lose some of its variegation in low-light settings. Avoid exposing it to direct sunlight, as this can scorch the leaves.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when the soil feels dry, and ensure that excess water drains away. Satin Pothos prefers to remain slightly moist but not waterlogged. It is more forgiving of underwatering than overwatering.`,
@@ -567,12 +567,12 @@ const allPlants = [
     Cleaning: Wipe the leaves occasionally with a damp cloth to remove dust and maintain their glossy appearance.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Indoor vs. Outdoor: Satin Pothos is primarily an indoor plant but can be grown outdoors in mild climates.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Pilea Peperomioides`,
     description: `Pilea peperomioides is a charming and distinctive houseplant known for its round, coin-shaped leaves on upright stems. It belongs to the Urticaceae family. The leaves are bright green, slightly succulent, and have a unique pancake or UFO-like shape, which adds to its appeal. This plant is often grown for its decorative foliage and ease of care.`,
-    image: "/images/pilea-peperomioides.png",
+    image: '/images/pilea-peperomioides.png',
     care: {
       light: `Chinese Money Plants thrive in bright, indirect light. They can tolerate some direct morning sunlight but should be protected from harsh, intense afternoon sun, which can scorch the leaves. Inadequate light may lead to leggy growth, and too much direct sunlight can cause leaf burn.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly but less frequently during the winter months when growth slows. Pilea peperomioides prefers to remain slightly moist but not waterlogged. Avoid overwatering, as this can lead to root rot.`,
@@ -587,12 +587,12 @@ const allPlants = [
     Cleaning: Wipe the leaves occasionally with a damp cloth to remove dust and maintain their vibrant appearance.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Sharing: Pilea peperomioides is often referred to as the "Pass It On" plant because it produces many "pups" or baby plants around the base. These can be separated and shared with friends or used to grow new plants.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
     name: `Phalaenopsis - "Orchid"`,
     description: `Phalaenopsis orchids, often called "Moth Orchids," are known for their striking, butterfly-like flowers and graceful, arching stems. These orchids come in various colors and patterns, making them a popular choice for indoor plant enthusiasts.`,
-    image: "/images/phalaenopsis-orquídea.png",
+    image: '/images/phalaenopsis-orquídea.png',
     care: {
       light: `Phalaenopsis orchids thrive in bright, indirect light. Place them near a north or east-facing window to provide them with the appropriate light levels. Protect them from direct sunlight, which can scorch the leaves.`,
       watering: `Water Phalaenopsis orchids when the potting mix feels dry to the touch, typically every 1-2 weeks. Water thoroughly, allowing excess water to drain from the pot. Avoid letting the orchid sit in standing water, as it can lead to root rot.`,
@@ -608,12 +608,12 @@ const allPlants = [
     Monitor Roots: Orchid roots should be healthy and silvery-green. If they turn brown or mushy, it may indicate overwatering or root rot.
     Patience: Orchids can take time to rebloom. Be patient, as it can be several months between flowering cycles.
     Pest Management: Keep an eye out for pests like scale insects, mealybugs, and aphids, and treat promptly if you notice any infestations.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
     name: `Pachira Aquatica`,
     description: `Pachira aquatica is commonly known as the "Money Tree" or "Guiana Chestnut." It is a popular tropical houseplant known for its distinctive braided trunk and lush, palmate leaves. It's believed to bring good luck and fortune according to feng shui practices.`,
-    image: "/images/pachira-aquatica.png",
+    image: '/images/pachira-aquatica.png',
     care: {
       light: `Pachira aquatica prefers bright, indirect light. It can tolerate some morning or evening sun, but it's best to protect it from harsh, direct sunlight, which can scorch the leaves. This plant can adapt to lower light conditions, but its growth may slow.`,
       watering: `Keep the soil evenly moist but not waterlogged. Water thoroughly when the top inch of soil feels slightly dry. Allow excess water to drain from the pot, as Pachira is sensitive to waterlogged soil. In the winter, reduce watering frequency.`,
@@ -628,12 +628,12 @@ const allPlants = [
     Support: If the plant gets top-heavy, consider staking it to provide support and maintain its upright growth.
     Pest Management: Watch for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years. Choose a slightly larger pot as needed.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Monstera Variegate`,
     description: `Monstera variegata is a stunning tropical houseplant known for its distinct variegated foliage. It belongs to the Araceae family. The leaves are large and typically heart-shaped, with unique creamy-white to yellow variegation patterns that can vary from plant to plant. The variegation adds a striking contrast to the deep green portions of the leaves, making it a highly sought-after and prized houseplant.`,
-    image: "/images/monstera-variegate.jpg",
+    image: '/images/monstera-variegate.jpg',
     care: {
       light: `Variegated Monstera thrives in bright, indirect light. It can tolerate some dappled sunlight, but direct sunlight should be avoided, as it can scorch the leaves. Insufficient light may result in less variegation and slower growth.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when the soil feels dry to the touch. Ensure that the pot has proper drainage to prevent waterlogged roots. Adjust the watering frequency based on the season; reduce watering in winter when growth slows.`,
@@ -646,12 +646,12 @@ const allPlants = [
     Propagation: Variegated Monstera can be propagated from stem cuttings with nodes. Root the cuttings in water or directly in soil.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Humidity: These plants appreciate higher humidity levels. You can increase humidity by misting the plant, using a humidity tray, or placing a humidifier nearby.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Monstera Adansonii 'Monkey Leaf'`,
     description: `Monstera adansonii 'Monkey Leaf' is a popular tropical houseplant known for its distinctive foliage. It belongs to the Araceae family. The leaves are typically small, about 1 to 3 inches long, and have unique, Swiss cheese-like holes (fenestrations) and irregular, wavy edges. The 'Monkey Leaf' variety is a compact version of the Monstera adansonii, making it suitable for smaller spaces.`,
-    image: "/images/monstera-adansonii.jpg",
+    image: '/images/monstera-adansonii.jpg',
     care: {
       light: `'Monkey Leaf' thrives in bright, indirect light. It can tolerate some dappled sunlight, but avoid direct sunlight, as it can scorch the leaves. Inadequate light may result in slower growth and smaller leaves.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when the soil feels dry to the touch. Ensure that the pot has good drainage to prevent waterlogged roots. Adjust the frequency of watering based on the season; reduce watering in winter when the plant's growth slows.`,
@@ -664,12 +664,12 @@ const allPlants = [
     Propagation: Monstera adansonii is easily propagated from stem cuttings. Simply cut a healthy stem section with a few nodes and root it in water or directly in soil.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Humidity: These plants appreciate higher humidity levels. You can increase humidity by misting the plant, using a humidity tray, or placing a humidifier nearby.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Ceropegia Woodii String of Hearts`,
     description: `Ceropegia woodii is a charming and unique trailing succulent plant known for its cascading vines of heart-shaped leaves. It belongs to the Apocynaceae family. The leaves are typically green with silver marbling on the top side and purple undersides. When grown in optimal conditions, this plant produces small tubular flowers that resemble delicate pink or purple lanterns. Its trailing growth habit makes it an ideal candidate for hanging baskets or tall containers.`,
-    image: "/images/string-of-hearts.png",
+    image: '/images/string-of-hearts.png',
     care: {
       light: `String of Hearts thrives in bright, indirect light. It can tolerate some direct sunlight, especially if it's protected from harsh midday sun. Inadequate light may lead to leggy growth, while too much direct sun can scorch the leaves.`,
       watering: `Allow the soil to dry out between waterings. Water sparingly but thoroughly when the top inch of soil feels dry to the touch. Overwatering can lead to root rot, so it's essential to let the soil dry moderately between waterings. Water less frequently during the winter when growth slows.`,
@@ -684,12 +684,12 @@ const allPlants = [
     Propagation: You can propagate new plants from stem cuttings. Simply cut a healthy stem with several nodes, let it callus for a day or two, and then plant it in well-draining soil.
     Pest Management: Check for common succulent pests like mealybugs and aphids, and treat them promptly if you notice any infestations.
     String of Hearts is a delightful and easy-to-care-for succulent that can add a touch of elegance to your indoor or outdoor space with its unique trailing form. With proper care, it will thrive and create a stunning visual display.`,
-    category: "Suspended",
+    category: 'Suspended',
   },
   {
     name: `Ficus Benjamina Variegate`,
     description: `Ficus benjamina variegate, commonly known as the "Variegated Weeping Fig," is a popular indoor tree or shrub prized for its elegant, glossy green leaves with creamy-white variegation. It has a graceful, weeping growth habit, making it a beautiful and decorative addition to indoor spaces.`,
-    image: "/images/ficus-variegate.png",
+    image: '/images/ficus-variegate.png',
     care: {
       light: `Ficus benjamina variegate prefers bright, indirect light. It can tolerate some direct morning sunlight, but it's best to protect it from harsh, intense afternoon sun, which can scorch the leaves. Inadequate light may lead to leaf drop and reduced variegation.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when needed, ensuring that excess water drains from the pot. Be cautious not to overwater, as Ficus benjamina variegate is sensitive to waterlogged roots.`,
@@ -704,12 +704,12 @@ const allPlants = [
     Humidity: Ficus benjamina variegate appreciates higher humidity levels. Use a humidity tray, room humidifier, or mist the leaves regularly.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 2-3 years.`,
-    category: "Purifying",
+    category: 'Purifying',
   },
   {
     name: `Ficus elastica 'Robusta'`,
     description: `Ficus elastica 'Robusta' is a popular indoor plant known for its striking foliage and air-purifying qualities. It belongs to the Moraceae family. The Rubber Plant features large, glossy, oval-shaped leaves that are typically deep green, and they can grow to be quite large, providing an impressive visual presence. 'Robusta' is a variety of the Rubber Plant that is often chosen for its robust growth and resilience.`,
-    image: "/images/ficus-elastica.png",
+    image: '/images/ficus-elastica.png',
     care: {
       light: `Rubber Plants thrive in bright, indirect light. They can tolerate lower light conditions but will grow more slowly in such situations. Avoid exposing them to direct sunlight, as it can scorch the leaves. Rotate the plant periodically to ensure even growth.`,
       watering: `Allow the top inch or so of the soil to dry out between waterings. Water thoroughly when the soil feels dry to the touch. Ensure that the pot has proper drainage to prevent waterlogging. Reduce the frequency of watering during the winter months when growth is slower.`,
@@ -723,12 +723,12 @@ const allPlants = [
     Cleaning: Wipe the leaves occasionally with a damp cloth to remove dust and maintain their glossy appearance.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Air Purification: Rubber Plants are known for their air-purifying properties, helping to improve indoor air quality.`,
-    category: "Purifying",
+    category: 'Purifying',
   },
   {
     name: `Monstera Deliciosa`,
     description: `Monstera deliciosa, also known as the "Swiss Cheese Plant" or "Split-Leaf Philodendron," is a popular and iconic tropical houseplant. It's recognized for its large, glossy, split leaves that develop unique holes and splits as it matures. The plant can grow both as a bushy, floor-standing plant or trained to climb with proper support.`,
-    image: "/images/monstera-deliciosa.png",
+    image: '/images/monstera-deliciosa.png',
     care: {
       light: `Monstera deliciosa thrives in bright, indirect light. It can tolerate some dappled sunlight, but it should be protected from direct sun exposure, which can scorch the leaves. Avoid low light conditions, as they can lead to leggy growth and smaller leaves.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top 1-2 inches of soil feel dry. Ensure that the pot has good drainage to prevent root rot. Reduce watering during the winter months when growth slows.`,
@@ -744,12 +744,12 @@ const allPlants = [
     Pruning and Propagation: Prune the plant as needed to maintain its shape and size. You can also propagate Monstera from stem cuttings.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Rotate: Rotate the plant occasionally to ensure even growth and prevent it from leaning toward the light source.`,
-    category: "Easy-to-Care",
+    category: 'Easy-to-Care',
   },
   {
     name: `Hedera helix - "Hera"`,
     description: `English Ivy is a trailing or climbing vine with distinctive, lobed leaves. The leaves are typically deep green, but some varieties may have variegation. Ivy is valued for its ability to trail gracefully from hanging baskets, climb walls or trellises, and provide a lush, green backdrop.`,
-    image: "/images/hera.png",
+    image: '/images/hera.png',
     care: {
       light: `English Ivy prefers bright, indirect light but can tolerate lower light conditions. Some morning or evening sunlight is acceptable, but avoid intense, direct sunlight that can scorch the leaves.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ivy appreciates humidity, so misting the plant or using a humidity tray can be beneficial, especially in dry indoor environments.`,
@@ -764,12 +764,12 @@ const allPlants = [
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and aphids, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 2-3 years.
     Remember that specific care requirements may vary slightly depending on the exact variety or cultivar of English Ivy, such as "Hera." If you have more detailed information about "Hera," it's a good idea to follow any specific care instructions provided for that variety.`,
-    category: "Pet Friendly",
+    category: 'Pet Friendly',
   },
   {
     name: `Strelitzia Nicolai`,
     description: `Strelitzia nicolai is a stunning tropical plant known for its dramatic foliage and resemblance to a banana tree. It belongs to the Strelitziaceae family and is characterized by its large, paddle-shaped leaves that are arranged in a fan-like manner. The leaves are deep green and can reach impressive sizes, often exceeding 3 feet in length. In its native habitat, it can produce striking white and blue bird-like flowers, but this is less common in indoor settings.`,
-    image: "/images/strelitzia.png",
+    image: '/images/strelitzia.png',
     care: {
       light: `Giant Bird of Paradise thrives in bright, indirect light. It prefers full sunlight but can tolerate partial shade. Inadequate light may slow its growth and reduce the chances of flowering. However, avoid exposing it to direct, harsh sunlight, which can scorch the leaves.`,
       watering: `Keep the soil moderately moist during the growing season (spring and summer). Water thoroughly when the top inch of soil feels dry to the touch. Reduce watering in the dormant season (fall and winter), allowing the soil to dry out more between waterings. It's essential not to overwater, as this can lead to root rot.`,
@@ -784,7 +784,7 @@ const allPlants = [
     Pruning Flowers: If your Giant Bird of Paradise produces flowers, you can prune them after they fade to encourage further leaf growth.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Indoor vs. Outdoor: While Giant Bird of Paradise can be grown indoors, it also thrives as an outdoor landscape plant in suitable climates.`,
-    category: "Tropical",
+    category: 'Tropical',
   },
 ];
 
@@ -794,7 +794,7 @@ async function insertPlants() {
     let db = await mongoose.connect(MONGO_URI);
 
     // Feedback regarding our connection
-    console.log("Database is now connected");
+    console.log('Database is now connected');
 
     // Create Plants in our database with the seeds array
     let PlantsCreated = await Plants.create(allPlants);
@@ -805,7 +805,7 @@ async function insertPlants() {
     // Close the connection
     await mongoose.connection.close();
   } catch (error) {
-    console.log("An error occurred while connecting to DB", error);
+    console.log('An error occurred while connecting to DB', error);
   }
 }
 insertPlants();
