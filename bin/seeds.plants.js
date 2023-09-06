@@ -259,7 +259,7 @@ const allPlants = [
   {
     name: `Dracaena Marginata 'Sunray'`,
     description: `Also known as the "Sunray Madagascar Dragon Tree," is a visually striking and popular indoor plant. It is a cultivar of the Dracaena marginata species. This plant is recognized for its slender, upright stems with clusters of arching, sword-shaped leaves. The leaves have a vibrant and distinctive coloration, featuring green centers with bright yellow to creamy margins, hence the name "Sunray."`,
-    image: '/images/dracaena-marginata.png',
+    image: '/images/dracaena-sunray.png',
     care: {
       light:
         'It can tolerate some direct sunlight, but prolonged exposure to harsh sun can scorch the leaves. Inadequate light can lead to leggy growth and faded leaf color. This plant can also adapt to lower light conditions, although its growth may slow.',
@@ -455,7 +455,7 @@ const allPlants = [
   {
     name: `Phyllostachya Pink – Hypoestes`,
     description: `The Phyllostachya Pink – Hypoestes is a Polka Dot Plant which is a charming and popular houseplant valued for its brightly colored, spotted leaves. The 'Pink' variety, as the name suggests, features vibrant pink or reddish-pink spots on its foliage. The leaves are typically elliptical or ovate and have a soft, somewhat fuzzy texture. Polka Dot Plants are known for their attractive and eye-catching appearance, making them a delightful addition to indoor spaces.`,
-    image: '/images/aglaonema-crete-flame.png',
+    image: '/images/pink.png',
     care: {
       light: `Polka Dot Plants prefer bright, indirect light. They thrive in filtered sunlight or moderate shade. While they can tolerate some direct morning sunlight, it's essential to avoid intense, direct sun, which can scorch the leaves. Inadequate light can result in leggy growth and less vibrant foliage.`,
       watering: `Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels slightly dry. Polka Dot Plants appreciate consistent moisture, and it's crucial to avoid both overwatering and underwatering. Use room-temperature water and ensure proper drainage.`,
