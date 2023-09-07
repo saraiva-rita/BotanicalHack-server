@@ -13,10 +13,9 @@ const cookieParser = require('cookie-parser');
 // unless the request is made from the same domain, by default express wont accept POST requests
 const cors = require('cors');
 
-// const FRONTEND_URL =
-//   'https://luxury-donut-aa8158.netlify.app' || 'http://localhost:5173';
+ const FRONTEND_URL = 'https://luxury-donut-aa8158.netlify.app' || 'http://localhost:5173';
 
-const FRONTEND_URL = 'http://localhost:5173';
+//const FRONTEND_URL = 'http://localhost:5173';
 
 // ℹ️ MongoStore in order to save the user session in the database
 // https://www.npmjs.com/package/connect-mongo
