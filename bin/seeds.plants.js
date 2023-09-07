@@ -14,12 +14,12 @@ const allPlants = [
     image: '/images/calathea-orbifolia.jpg',
     care: {
       light:
-        "Avoid direct sunlight, as it can scorch the leaves. It's best suited for areas with filtered or dappled sunlight. ",
+        "Avoid direct sunlight, as it can scorch the leaves. It's best suited for areas with filtered or dappled sunlight.",
       watering:
-        'Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. /n ',
-      soil: 'Plant Calathea orbifolia in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots. /n ',
+        'Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot.',
+      soil: 'Plant Calathea orbifolia in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots.',
       seasonalCare:
-        "Humidity: Maintain higher humidity levels around the plant, especially during the dry winter months. Use a humidifier or place the pot on a humidity tray. /n Pruning: Remove any brown or damaged leaves to encourage healthy growth and maintain the plant's appearance. /n Cleaning: Wipe the leaves regularly with a damp cloth to remove dust and keep the foliage looking vibrant. /n WinterCare: Reduce watering and avoid fertilizing during the winter when the plant is in a semi-dormant state. /n ",
+        "Humidity: Maintain higher humidity levels around the plant, especially during the dry winter months. Use a humidifier or place the pot on a humidity tray. /n Pruning: Remove any brown or damaged leaves to encourage healthy growth and maintain the plant's appearance. /n Cleaning: Wipe the leaves regularly with a damp cloth to remove dust and keep the foliage looking vibrant. /n WinterCare: Reduce watering and avoid fertilizing during the winter when the plant is in a semi-dormant state.",
       fertilizing:
         'Feed every 4-6 weeks during spring and summer with a balanced, water-soluble fertilizer diluted to half strength',
     },
@@ -28,6 +28,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -37,16 +38,17 @@ const allPlants = [
     image: '/images/calathea-medallion.png',
     care: {
       light:
-        "Avoid direct sunlight, as it can scorch the leaves and cause them to lose their vibrant coloration. It's best suited for areas with filtered or dappled sunlight. Low light conditions may lead to reduced growth and less vibrant foliage /n ",
+        "Avoid direct sunlight, as it can scorch the leaves and cause them to lose their vibrant coloration. It's best suited for areas with filtered or dappled sunlight. Low light conditions may lead to reduced growth and less vibrant foliage.",
       watering:
-        'Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. Consider using a humidity tray or misting the leaves regularly./n ',
-      soil: 'Plant it in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots. /n ',
+        'Keep the soil consistently moist but not waterlogged. Water when the top inch of soil feels dry. Ensure that the pot has good drainage to prevent root rot. Consider using a humidity tray or misting the leaves regularly.',
+      soil: 'Plant it in a well-draining, peat-based potting mix. The mix should retain moisture but also provide good aeration for the roots.',
       seasonalCare:
-        "Humidity: Maintain higher humidity levels around the plant, especially during the dry winter months. Use a humidifier or place the pot on a humidity tray. /n Pruning: Remove any brown or damaged leaves to encourage healthy growth and maintain the plant's appearance. /n Cleaning: Wipe the leaves regularly with a damp cloth to remove dust and keep the foliage looking vibrant. /n Winter Care: Reduce watering and avoid fertilizing during the winter when the plant is in a semi-dormant state. /n ",
+        "Humidity: Maintain higher humidity levels around the plant, especially during the dry winter months. Use a humidifier or place the pot on a humidity tray. /n Pruning: Remove any brown or damaged leaves to encourage healthy growth and maintain the plant's appearance. /n Cleaning: Wipe the leaves regularly with a damp cloth to remove dust and keep the foliage looking vibrant. /n Winter Care: Reduce watering and avoid fertilizing during the winter when the plant is in a semi-dormant state.",
       fertilizing:
         'Feed every 4-6 weeks during spring and summer with a balanced, water-soluble fertilizer diluted to half strength. Avoid fertilizing during the winter months.',
     },
-    tips: 'Temperature Sensitivity: Protect the plant from temperature fluctuations and drafts, which can cause stress and leaf damage. /n Grouping: Grouping it with other plants can help create a microclimate with higher humidity levels. /n Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.  /n Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations. /n Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed. /n ',
+    tips: 'Temperature Sensitivity: Protect the plant from temperature fluctuations and drafts, which can cause stress and leaf damage. /n Grouping: Grouping it with other plants can help create a microclimate with higher humidity levels. /n Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.  /n Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations. /n Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.',
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -68,6 +70,7 @@ const allPlants = [
     Rotate: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -89,6 +92,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -109,6 +113,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Calathea',
   },
   {
@@ -129,6 +134,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Calathea',
   },
   {
@@ -150,6 +156,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Calathea',
   },
   {
@@ -172,6 +179,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Calathea',
   },
   {
@@ -190,6 +198,7 @@ const allPlants = [
     Keep Away from Drafts: Protect the plant from drafts and sudden temperature changes, as this can cause stress and leaf damage.
     Prayer Plant Behavior: is sometimes referred to as a "prayer plant" due to its habit of folding its leaves upward at night. This is a natural behavior and not a cause for concern.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Calathea',
   },
   {
@@ -212,6 +221,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years in the spring. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Calathea',
   },
   {
@@ -234,6 +244,7 @@ const allPlants = [
     Pest Resistance: It's generally resistant to pests, making it a low-maintenance choice.
     Sturdy Container: Ensure that the pot or container has good drainage to prevent waterlogged soil.
     Patience: Aspidistra elatior is a slow grower, so be patient and don't expect rapid growth or frequent propagation.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -254,6 +265,7 @@ const allPlants = [
     Humidity: While they can adapt to lower humidity levels, Pothos appreciate moderate to high humidity. A humidity tray or regular misting can be beneficial.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound, typically every 2-3 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Purifying',
   },
   {
@@ -276,6 +288,7 @@ const allPlants = [
     Humidity: While it can adapt to average indoor humidity levels, higher humidity levels can benefit the plant's overall health.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container. Typically, this is needed every 2-3 years.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Purifying',
   },
   {
@@ -295,6 +308,7 @@ const allPlants = [
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Indoor vs. Outdoor: Pothos is primarily an indoor plant but can be grown outdoors in mild climates.
     Pothos is a fantastic choice for both beginner and experienced plant enthusiasts due to its resilience and adaptability. With proper care, it will thrive indoors and enhance the beauty of your living space.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -313,6 +327,7 @@ const allPlants = [
     Pruning: Remove any damaged or yellowing leaves to encourage healthy growth.
     Pest Management: Keep an eye out for pests like spider mites and scale insects, which can sometimes infest Alocasia Polly. Treat promptly if you notice any issues.
     Toxicity: Be cautious if you have pets or small children, as Alocasia Polly is toxic if ingested.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Foliage',
   },
   {
@@ -332,6 +347,7 @@ const allPlants = [
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 2-3 years in the spring.
     Propagation: Can be propagated through stem cuttings. Take cuttings with a few leaves attached and root them in a well-draining medium.
     Support: As the plant grows, you may need to provide gentle support to keep its stems from becoming too leggy.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Foliage',
   },
   {
@@ -349,6 +365,7 @@ const allPlants = [
     tips: `Mulching: Apply a 2-3 inch (5-7.5 cm) layer of organic mulch, such as wood chips or shredded bark, around the base of the shrub to help retain soil moisture and regulate temperature.
     Leaf Cleanup: Rake and remove fallen leaves in the fall to prevent the spread of diseases and maintain a tidy appearance.
     Protection from Deer: If you have deer in your area, protect your 'Kiyohime' Japanese Maple from deer browsing by using deterrents or fencing.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
   {
@@ -363,6 +380,7 @@ const allPlants = [
       fertilizing: ` Fertilize lightly in spring and summer.`,
     },
     tips: `Prune to maintain the desired shape, watch for aphids and scale insects, repot every 2-3 years, propagate from seeds or cuttings, use stakes for support if necessary.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
   {
@@ -384,6 +402,7 @@ const allPlants = [
     Pot Size: Choose a pot that allows for some room for growth but doesn't overwhelm the plant. Repot as needed when the plant becomes root-bound.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Temperature Sensitivity: Protect the plant from temperature fluctuations and drafts.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -405,6 +424,7 @@ const allPlants = [
     Rotation: Rotate the plant periodically to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Foliage',
   },
   {
@@ -425,6 +445,7 @@ const allPlants = [
     Rotation: Rotate the plant occasionally to ensure even growth and prevent it from leaning toward the light source.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -443,6 +464,7 @@ const allPlants = [
     Pruning: Prune to remove any yellowing or damaged leaves and to maintain the desired shape.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container, typically every 2-3 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Purifying',
   },
   {
@@ -462,6 +484,7 @@ const allPlants = [
     Pinching: Pinch or trim the plant occasionally to encourage compact growth and prevent it from becoming leggy.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and aphids, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 1-2 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -478,6 +501,7 @@ const allPlants = [
     tips: `Hanging Container: Rhipsalis paradoxa minor is well-suited to hanging baskets or containers, allowing its trailing stems to cascade gracefully.
     Propagation: This cactus can be propagated from stem cuttings. Simply cut a healthy stem segment and allow it to callus before planting it in well-draining soil.
     Humidity: While not overly sensitive to humidity levels, this cactus can benefit from higher humidity, which can be achieved by misting the plant or placing a humidity tray nearby.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -498,6 +522,7 @@ const allPlants = [
     Propagation: can be easily propagated from stem cuttings placed in water or directly in soil.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound or outgrows its container. Typically, this is needed every 2-3 years in the spring.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -516,6 +541,7 @@ const allPlants = [
     Support: Provide support or a trellis if the stems become too long and start to trail excessively.
     Propagation: You can propagate new plants from stem cuttings. Simply cut a healthy stem with pearls, let it callus for a day or two, and then plant it in well-draining soil.
     Pest Management: Check for common succulent pests like mealybugs and aphids, and treat them promptly if you notice any infestations.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -534,6 +560,7 @@ const allPlants = [
     Support: Provide support or a trellis if the stems become too long and start to trail excessively.
     Propagation: You can propagate new plants from stem cuttings. Simply cut a healthy stem segment, let it callus for a day or two, and then plant it in well-draining soil.
     Pest Management: Check for common succulent pests like mealybugs and aphids, and treat them promptly if you notice any infestations.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -552,6 +579,7 @@ const allPlants = [
     Cleaning: Wipe the leaves occasionally with a damp cloth to remove dust and maintain their glossy appearance.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Indoor vs. Outdoor: Satin Pothos is primarily an indoor plant but can be grown outdoors in mild climates.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -571,6 +599,7 @@ const allPlants = [
     Cleaning: Wipe the leaves occasionally with a damp cloth to remove dust and maintain their vibrant appearance.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Sharing: Pilea peperomioides is often referred to as the "Pass It On" plant because it produces many "pups" or baby plants around the base. These can be separated and shared with friends or used to grow new plants.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -591,6 +620,7 @@ const allPlants = [
     Monitor Roots: Orchid roots should be healthy and silvery-green. If they turn brown or mushy, it may indicate overwatering or root rot.
     Patience: Orchids can take time to rebloom. Be patient, as it can be several months between flowering cycles.
     Pest Management: Keep an eye out for pests like scale insects, mealybugs, and aphids, and treat promptly if you notice any infestations.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -610,6 +640,7 @@ const allPlants = [
     Support: If the plant gets top-heavy, consider staking it to provide support and maintain its upright growth.
     Pest Management: Watch for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot the plant when it becomes root-bound, typically every 2-3 years. Choose a slightly larger pot as needed.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -627,6 +658,7 @@ const allPlants = [
     Propagation: Variegated Monstera can be propagated from stem cuttings with nodes. Root the cuttings in water or directly in soil.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Humidity: These plants appreciate higher humidity levels. You can increase humidity by misting the plant, using a humidity tray, or placing a humidifier nearby.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -644,6 +676,7 @@ const allPlants = [
     Propagation: Monstera adansonii is easily propagated from stem cuttings. Simply cut a healthy stem section with a few nodes and root it in water or directly in soil.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Humidity: These plants appreciate higher humidity levels. You can increase humidity by misting the plant, using a humidity tray, or placing a humidifier nearby.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -663,6 +696,7 @@ const allPlants = [
     Propagation: You can propagate new plants from stem cuttings. Simply cut a healthy stem with several nodes, let it callus for a day or two, and then plant it in well-draining soil.
     Pest Management: Check for common succulent pests like mealybugs and aphids, and treat them promptly if you notice any infestations.
     String of Hearts is a delightful and easy-to-care-for succulent that can add a touch of elegance to your indoor or outdoor space with its unique trailing form. With proper care, it will thrive and create a stunning visual display.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -682,6 +716,7 @@ const allPlants = [
     Humidity: Ficus benjamina variegate appreciates higher humidity levels. Use a humidity tray, room humidifier, or mist the leaves regularly.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 2-3 years.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Purifying',
   },
   {
@@ -700,6 +735,7 @@ const allPlants = [
     Cleaning: Wipe the leaves occasionally with a damp cloth to remove dust and maintain their glossy appearance.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Air Purification: Rubber Plants are known for their air-purifying properties, helping to improve indoor air quality.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Purifying',
   },
   {
@@ -716,6 +752,7 @@ const allPlants = [
     tips: `Humidity: Pink Princess appreciates higher humidity levels. You can increase humidity by misting the plant, using a humidity tray, or placing it in a well-humidified room.
     Potting: Repot Pink Princess as needed when it becomes root-bound, typically every 2-3 years or when the plant has outgrown its pot.
     Support: As Pink Princess grows, it may benefit from a support structure, such as a moss pole or trellis, to encourage upward growth and reduce legginess.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Purifying',
   },
   {
@@ -736,6 +773,7 @@ const allPlants = [
     Pruning and Propagation: Prune the plant as needed to maintain its shape and size. You can also propagate Monstera from stem cuttings.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Rotate: Rotate the plant occasionally to ensure even growth and prevent it from leaning toward the light source.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -755,6 +793,7 @@ const allPlants = [
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and aphids, and treat promptly if you notice any infestations.
     Repotting: Repot when the plant becomes root-bound or outgrows its container, typically every 2-3 years.
     Remember that specific care requirements may vary slightly depending on the exact variety or cultivar of English Ivy, such as "Hera." If you have more detailed information about "Hera," it's a good idea to follow any specific care instructions provided for that variety.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Pet Friendly',
   },
   {
@@ -774,6 +813,7 @@ const allPlants = [
     Pruning Flowers: If your Giant Bird of Paradise produces flowers, you can prune them after they fade to encourage further leaf growth.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and mealybugs, and treat promptly if you notice any infestations.
     Indoor vs. Outdoor: While Giant Bird of Paradise can be grown indoors, it also thrives as an outdoor landscape plant in suitable climates.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -792,6 +832,7 @@ const allPlants = [
     Support: Provide support for the fronds if they become too heavy and start to bend.
     Pest Management: Keep an eye out for common indoor plant pests like spider mites and scale insects, and treat promptly if you notice any infestations.
     Humidity: Kentia Palms appreciate some humidity. You can increase humidity levels by misting the plant or using a humidity tray.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Easy-to-Care',
   },
   {
@@ -809,6 +850,7 @@ const allPlants = [
     tips: `Support: Provide support for the vines to climb if desired. Hoya burtoniae 'Green' can be trained to grow on trellises or stakes.
     Propagation: Hoya plants are easily propagated from stem cuttings. Allow cuttings to callus for a day or two, then plant them in a well-draining mix.
     Pest Management: Keep an eye out for common indoor plant pests like mealybugs and aphids, and treat promptly if you notice any infestations.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -826,6 +868,7 @@ const allPlants = [
     Propagation: This plant can be propagated from stem cuttings. Simply cut a healthy stem with a few leaves and allow it to root in water before potting it in soil.
     Pest Management: Keep an eye out for common houseplant pests like mealybugs and spider mites, and treat promptly if you notice any infestations.
     Humidity: Scindapsus pictus appreciates higher humidity levels. You can increase humidity by misting the plant or placing a tray of water near it.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -842,6 +885,7 @@ const allPlants = [
     tips: `Hanging Basket: 'Red Coral' is often best displayed in a hanging basket or container with good drainage, allowing its trailing stems to drape beautifully.
     Propagation: This plant can be propagated from stem cuttings. Simply cut a healthy stem segment and allow it to callus before planting it in well-draining soil.
     Humidity: While not overly sensitive to humidity levels, 'Red Coral' can appreciate higher humidity, which can be achieved by misting the plant or placing a tray of water nearby.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -858,6 +902,7 @@ const allPlants = [
     tips: `Hanging Baskets or Mounted: Many Dischidia species are epiphytic, so they can be grown in hanging baskets or mounted on pieces of wood or bark for a natural look.
     Humidity: While not overly sensitive to humidity levels, Dischidia can benefit from higher humidity. You can achieve this by misting the plant or placing a humidity tray nearby.
     Ant Plants: Some Dischidia species have specialized structures to house ants in their natural habitat. If you're growing these species, do some research to understand their unique care requirements and the potential role of ants in their growth.`,
+    toxicity: 'Be careful! This plant is toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -876,10 +921,11 @@ const allPlants = [
     Protection from Drafts: Protect the bonsai from drafts and sudden temperature fluctuations, as it prefers consistent conditions.
     Pest Management: Keep an eye out for common indoor plant pests like scale insects and spider mites, and treat promptly if you notice any infestations.
     Wiring: Wiring can be used to shape the branches and trunk of your bonsai. Be gentle and careful when wiring, and remove the wire once the branch or trunk has set in the desired position.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
   {
-    name: `Bonsai - Senecio Rowleyanus Variegated`,
+    name: `Bonsai Senecio Rowleyanus Variegated`,
     description: `Senecio rowleyanus variegated is a charming and unique succulent known for its trailing, bead-like leaves. It is a variegated form of the traditional String of Pearls plant. The small, spherical leaves are green with white or creamy stripes, creating a striking and ornamental appearance. This succulent is native to South Africa and belongs to the Asteraceae family.`,
     image: '/images/bonsai-senecio.png',
     care: {
@@ -893,6 +939,7 @@ const allPlants = [
     Propagation: This succulent can be propagated from stem cuttings. Simply cut a healthy stem and allow it to callus for a day or two before planting it in soil.
     Pest Management: Keep an eye out for common succulent pests like mealybugs and aphids, and treat promptly if you notice any infestations.
     Protection from Frost: If grown outdoors, protect Variegated String of Pearls from frost and freezing temperatures, as it is not frost-hardy.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Suspended',
   },
   {
@@ -910,6 +957,7 @@ const allPlants = [
     tips: `Mulching: Apply a 2-3 inch (5-7.5 cm) layer of organic mulch, such as wood chips or shredded bark, around the base of the tree to help retain soil moisture and regulate temperature.
     Leaf Cleanup: Rake and remove fallen leaves in the fall to prevent the spread of diseases and maintain a tidy appearance.
     Protection from Deer: If you have deer in your area, protect your 'Deshojo' Japanese Maple from deer browsing by using deterrents or fencing.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
   {
@@ -926,6 +974,7 @@ const allPlants = [
     tips: `Mulching: Apply a 2-3 inch (5-7.5 cm) layer of organic mulch, such as wood chips or shredded bark, around the base of the tree to help retain soil moisture and regulate temperature.
     Leaf Cleanup: Rake and remove fallen leaves in the fall to prevent the spread of diseases and maintain a tidy appearance.
     Protection from Deer: If you have deer in your area, protect your 'Nomura' Japanese Maple from deer browsing by using deterrents or fencing.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
   {
@@ -942,6 +991,7 @@ const allPlants = [
     tips: `Mulching: Apply a layer of organic mulch, such as wood chips or compost, around the base of the tree to help retain moisture, suppress weeds, and regulate soil temperature.
     Protection from Deer: In areas with deer populations, consider protecting young trees from deer browsing by using deterrents or fencing.
     Disease and Pest Management: Turczaninow's Hornbeam is relatively resistant to pests and diseases. However, it's always a good practice to monitor the tree for any signs of issues and address them promptly.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
   {
@@ -958,12 +1008,13 @@ const allPlants = [
     tips: `Mulching: Apply a layer of organic mulch, such as pine straw or wood chips, around the base of the tree to help conserve soil moisture and control weeds.
     Protection from Deer: In areas with deer populations, protect young Japanese Black Pines from deer browsing by using deterrents or fencing.
     Wind Protection: If grown in windy coastal areas, consider providing windbreaks or shelter to protect the tree from salt spray and strong winds.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
   {
-    name: `Bonsai Juniperus chinensis 'Kishu' (Kishu Chinese Juniper)`,
+    name: `Bonsai Juniperus chinensis 'Kishu'`,
     description: `Juniperus chinensis 'Kishu' is a compact and attractive evergreen shrub belonging to the Cupressaceae family. This cultivar is known for its dense, finely textured foliage and low-growing, spreading habit. It typically reaches a height of 2 to 3 feet (0.6 to 0.9 meters) with a spread of 4 to 5 feet (1.2 to 1.5 meters). The foliage is a rich, dark green, providing year-round interest. 'Kishu' is prized for its versatility and is often used in landscaping for ground cover, borders, or container planting.`,
-    image: '/images/pinus.png',
+    image: '/images/kishu.png',
     care: {
       light: `Thrives in full sun to partial sun. It can tolerate a variety of light conditions but performs best when it receives at least 6 hours of direct sunlight daily.`,
       watering: `Once established, 'Kishu' is relatively drought-tolerant and requires minimal watering. Water young plants regularly to establish a strong root system. Mature plants typically only need supplemental watering during dry spells.`,
@@ -973,6 +1024,7 @@ const allPlants = [
     },
     tips: `Mulching: Apply a layer of organic mulch, such as wood chips or pine straw, around the base of the shrub to conserve soil moisture, suppress weeds, and regulate soil temperature.
     Protection from Heavy Snow: In areas with heavy snowfall, gently brush off accumulated snow from the branches to prevent damage.`,
+    toxicity: 'This plant is not toxic to your pets.🐾',
     category: 'Bonsai',
   },
 ];
