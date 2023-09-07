@@ -881,7 +881,7 @@ const allPlants = [
   {
     name: `Bonsai - Senecio Rowleyanus Variegated`,
     description: `Senecio rowleyanus variegated is a charming and unique succulent known for its trailing, bead-like leaves. It is a variegated form of the traditional String of Pearls plant. The small, spherical leaves are green with white or creamy stripes, creating a striking and ornamental appearance. This succulent is native to South Africa and belongs to the Asteraceae family.`,
-    image: '/images/ficus-ginseng.png',
+    image: '/images/bonsai-senecio.png',
     care: {
       light: `Prefers bright, indirect light. It does well in a location with plenty of indirect sunlight, such as near a south- or west-facing window. Avoid exposing it to direct sunlight, as this can scorch the leaves. Inadequate light may result in less vibrant variegation.`,
       watering: `Allow the soil to dry out completely between waterings. Water sparingly, and be cautious not to overwater, as this plant is susceptible to root rot. Water less frequently during the winter months when growth slows.`,
