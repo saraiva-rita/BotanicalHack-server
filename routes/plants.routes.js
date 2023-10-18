@@ -71,14 +71,20 @@ router.post(
     const { plantId } = req.params;
     const currentUser = req.payload;
 
-    console.log('current user:', currentUser);
+    
     try {
       const user = await User.findById(currentUser._id);
+
+      if(user.myPlants.includes(plantId)) {
+        return res.status(400).json({message: "This plant already in your plants list"})
+      }
       const myPlant = await User.findByIdAndUpdate(currentUser._id, {
         $push: { myPlants: plantId },
       });
-    } catch {
-      (error) => res.json(error);
+      res.json({message: "Plant added to My Plants successfully."})
+
+    } catch (error){
+      res.status(500).json({message: "An error occured while adding the plant to My Plants"});
     }
   }
 );
@@ -143,11 +149,19 @@ router.post(
     const currentUser = req.payload;
     try {
       const user = await User.findById(currentUser._id);
+
+      // check if plant is already in whishlist
+      if (user.wishList.includes(plantId)){
+        return res.status(400).json({message: "This plant is already in your wishlist"})
+      }
+
       const myWish = await User.findByIdAndUpdate(currentUser._id, {
         $push: { wishList: plantId },
       });
-    } catch {
-      (error) => res.json(error);
+
+      res.json({message: "Plant added to wishlist successfully."})
+    } catch (error){
+      res.status(500).json({message: "An error occurred while ading the plant to your wishlist"});
     }
   }
 );
@@ -231,7 +245,9 @@ router.post(
 
       await Plants.findByIdAndUpdate(plantId, { rating: plantAverageRating });
 
-      res.json(plantReviewed);
+      //res.json(plantReviewed);
+      res.json({ plant: plantReviewed});
+
     } catch {
       (error) => res.json(error);
     }
